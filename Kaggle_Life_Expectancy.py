@@ -199,10 +199,46 @@ from sklearn.metrics import classification_report
 print(classification_report(y_test, y_pred))
 
 
+# In[120]:
+
+
+import mglearn
+import matplotlib as plt
+
+
+# In[161]:
+
+
+X = df
+print(X)
+
+
+# In[162]:
+
+
+print(X)
+
+
+# In[174]:
+
+
+print(X.columns[3])
+
+
+# In[175]:
+
+
+#mglearn.discrete_scatter(X[:, 0], X[:, 1], y)
+plt.pyplot.scatter(X['Male Life'], X['Female Life'])
+
+plt.pyplot.xlabel(X.columns[3])
+plt.pyplot.ylabel(X.columns[4])
+
+
+# The Male Life and Female Life expectancy is linear regarding each countries.
+
 # In[ ]:
 
 
 
 
-
-# 
